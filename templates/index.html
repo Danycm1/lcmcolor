@@ -45,16 +45,13 @@
               <a class="nav-link" aria-current="page" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tarifs</a>
+              <a class="nav-link" href="#tarif">Tarifs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Horaires</a>
+              <a class="nav-link" href="#horaires&contacts">Horaires & Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galeries</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#galeries">Galeries</a>
             </li>
           </ul>
         </div>
@@ -136,14 +133,13 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7" id="tarif">
           <h2 class="featurette-heading">Tarifs</h2>
           <br>
         </div>
-        <div class="table-responsive-lg">
-          <div class="card-group">
-            <!-- Table femme -->
-            <div class="card">
+        <div class="row">
+          <div class="col">
+            <div class="card h-100 rounded">
               <div class="card-body">
                 <h5 class="card-title">Tarifs Femme</h5>
                 <p class="card-text">
@@ -209,9 +205,9 @@
                 </small>
               </div>
             </div>
-
-            <!-- Table homme & enfants -->
-            <div class="card">
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded">
               <div class="card-body">
                 <h5 class="card-title">Tarifs Homme & Enfant</h5>
                 <p class="card-text">
@@ -232,7 +228,8 @@
                       <td>40 €</td>
                     </tr>
                     <tr>
-                      <td class="d-flex">Shampooing + brushing + coupe enfant<p class="fw-bolder">*</p></td>
+                      <td class="d-flex">Shampooing + brushing + coupe enfant<p class="fw-bolder">*</p>
+                      </td>
                       <td>12 €</td>
                     </tr>
                   </tbody>
@@ -245,54 +242,100 @@
             </div>
           </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div id="horaires&contacts" class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Horaires & Contact</h2>
+            <p class="lead">Je me déplace dans les secteurs du 60 et 95, dans un rayon de 20km en partant de Chambly.
+            </p>
+            <div class="col">
+              <div class="card h-100 rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Heures d'ouvertures</h5>
+                  <caption>Vous pouvez me joindre au <span class="fw-bolder">06 27 38 57 30</span></p>
+                  </caption>
+                  <p class="card-text">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Jour</th>
+                        <th scope="col">Heures</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lundi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Mardi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Mercredi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Jeudi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Vendredi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Samedi</td>
+                        <td>10h - 19h</td>
+                      </tr>
+                      <tr>
+                        <td>Dimanche</td>
+                        <td>Fermé</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Uniquement sur rendez-vous, appelez vite ! <br><br><br></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-2">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Ri1ekCLwh8nO8sgkDj9fkSRPDQaazUSR&ehbc=2E312F"
+              width="500" height="500"></iframe>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div id="galeries" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+              intended to be actually read, simply here to give you a better view of what this would look like with some
+              actual content. Your content.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">google map + table horaires <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-    </div>
-
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2022 LCM Color Zen &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2022 LCM Color Zen &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
   </main>
   <script src="../static/bootstrap.bundle.min.js"></script>
 </body>
