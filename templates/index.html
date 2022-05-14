@@ -151,56 +151,12 @@
                     </tr>
                   </thead>
                   <tbody>
+                    {% for item in pricedb[:11] %}
                     <tr>
-                      <td>Shampooing + brushing</td>
-                      <td>15 €</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.price }}</td>
                     </tr>
-                    <tr>
-                      <td>Shampooing + coupe + brushing</td>
-                      <td>25 €</td>
-                    </tr>
-                    <tr>
-                      <td>Shampooing + coupe fourche + brushing</td>
-                      <td>45 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Shampooing + coupe + couleur<p class="fw-bolder">*</p> + brushing
-                      </td>
-                      <td>50 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Shampooing + coupe + meches/balayages<p class="fw-bolder">*</p> + brushing
-                      </td>
-                      <td>65 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Shampooing + coupe + couleur + meches<p class="fw-bolder">*</p> + brushing
-                      </td>
-                      <td>70 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Shampooing + coupe + permanente<p class="fw-bolder">*</p> + brushing
-                      </td>
-                      <td>55 €</td>
-                    </tr>
-                    <tr>
-                      <td>Lissage</td>
-                      <td>Sur devis</td>
-                    </tr>
-                    <tr>
-                      <td>Pose d'extensions</td>
-                      <td>Sur devis</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Chignon mariée<p class="fw-bolder">**</p>
-                      </td>
-                      <td>90 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Soin visage LHL<p class="fw-bolder">***</p>
-                      </td>
-                      <td>65 €</td>
-                    </tr>
+                    {% endfor %}
                   </tbody>
                 </table>
                 </p>
@@ -224,19 +180,12 @@
                     </tr>
                   </thead>
                   <tbody>
+                    {% for item in pricedb[11:] %}
                     <tr>
-                      <td>Shampooing + coupe homme</td>
-                      <td>15 €</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.price }}</td>
                     </tr>
-                    <tr>
-                      <td>Shampooing + brushing + coupe + couleur homme</td>
-                      <td>40 €</td>
-                    </tr>
-                    <tr>
-                      <td class="d-flex">Shampooing + brushing + coupe enfant<p class="fw-bolder">*</p>
-                      </td>
-                      <td>12 €</td>
-                    </tr>
+                    {% endfor %}
                   </tbody>
                 </table>
                 </p>
@@ -270,34 +219,12 @@
                       </tr>
                     </thead>
                     <tbody>
+                      {% for item in scheduledb %}
                       <tr>
-                        <td>Lundi</td>
-                        <td>10h - 19h</td>
+                        <td>{{ item.day }}</td>
+                        <td>{{ item.hours }}</td>
                       </tr>
-                      <tr>
-                        <td>Mardi</td>
-                        <td>10h - 19h</td>
-                      </tr>
-                      <tr>
-                        <td>Mercredi</td>
-                        <td>10h - 19h</td>
-                      </tr>
-                      <tr>
-                        <td>Jeudi</td>
-                        <td>10h - 19h</td>
-                      </tr>
-                      <tr>
-                        <td>Vendredi</td>
-                        <td>10h - 19h</td>
-                      </tr>
-                      <tr>
-                        <td>Samedi</td>
-                        <td>10h - 19h</td>
-                      </tr>
-                      <tr>
-                        <td>Dimanche</td>
-                        <td>Fermé</td>
-                      </tr>
+                      {% endfor %}
                     </tbody>
                   </table>
                   </p>
