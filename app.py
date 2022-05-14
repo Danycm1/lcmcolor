@@ -22,7 +22,7 @@ def home():
 
     folium.Circle(location, radius=float(40 * 370)).add_to(folium_map)
 
-    return render_template("index.html", map=folium_map._repr_html_(), pricedb=Price.query.all(), scheduledb=Schedule.query.all)
+    return render_template("index.html", map=folium_map._repr_html_(), pricedb=Price.query.all(), scheduledb=Schedule.query.all())
 
 
 class User(db.Model):
