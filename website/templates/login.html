@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Se connecter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #593196;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                            <h3 class="mb-5">Connexion</h3>
+                            <form method="POST">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="username">Nom d'utilisateur</label>
+                                    <input type="username" id="username" name="username"
+                                        class="form-control form-control-lg" />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="password">Mot de passe</label>
+                                    <input type="password" id="password" name="password"
+                                        class="form-control form-control-lg" />
+                                </div>
+
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Se connecter</button>
+                                <br>
+                                {% with messages = get_flashed_messages() %}
+                                    {% if messages %}
+                                        {% for message in messages %}
+                                        <br>{{ message }}
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endwith %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
